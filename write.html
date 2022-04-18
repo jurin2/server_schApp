@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>스케쥴</title>
+<style>
+    .container{
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    form{
+        display: inline-block; 
+        width: 500px;
+        border: 1px solid black;
+        padding: 20px;
+    }
+    label{
+        margin-top: 10px;
+        text-align: left;
+    }
+    input{
+        padding: 5px;
+    }
+    input[type=text]{
+        width: 400px;
+    }
+    input[type=submit]{
+        width: 400px;
+        background-color: black;
+        color: white;
+        border:none;
+    }
+    input:last-child{
+        margin-top: 15px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>스케쥴</h1>
+        <form action="/add" method="post">
+            <label>할일 기록하기<br>
+            <input type="text" name="title"></label>
+            <br>
+            <br>
+            <label>우선순위<br>
+            <input type="text" name="order"></label>
+            <br>      
+            <br>
+            <input type="submit" value="기록">
+        </form>
+    </div>
+</body>
+</html>
